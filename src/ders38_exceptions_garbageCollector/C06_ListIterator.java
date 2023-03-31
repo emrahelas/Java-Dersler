@@ -27,5 +27,7 @@ public class C06_ListIterator {
         }
 
         System.out.println(sayilar);
+
+        //git denemesi
     }
 }
