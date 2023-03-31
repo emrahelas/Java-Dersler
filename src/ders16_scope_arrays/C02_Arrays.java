@@ -1,0 +1,51 @@
+package ders16_scope_arrays;
+
+import java.util.Arrays;
+
+public class C02_Arrays {
+    public static void main(String[] args) {
+
+        String[] isimler = {"Elif", "Asli", "Mustafa"};
+
+        int[] sayilar =  {2,3,4,5,6,7};
+
+        char [] karakterler  = {'e','r','g'};
+
+        // Array non-primitive data turlerindendir
+        // Eger array'i liste seklinde olusturmayip
+        // new keyword kullaniyorsak
+        // UZUNLUGUNU yazmak ZORUNDAYIZ
+
+        String[] arr = new String[5];
+
+        // Bir array tanimlanan uzunluktan daha fazla veya az eleman alamaz
+
+        // Bir array'i yazdirmak istersek
+
+        // Array'ler direkt yazdirilamaz
+
+        System.out.println(isimler); // [Ljava.lang.String;@568db2f2
+
+        System.out.println(Arrays.toString(sayilar));
+
+        System.out.println(Arrays.toString(arr)); // [null, null, null, null, null]
+
+        int[] a = new int[7];
+        System.out.println(Arrays.toString(a)); // [0, 0, 0, 0, 0, 0, 0]
+
+        // array'deki elementlere nasil ulasiriz? index ile
+
+        a[0] = 4; // [4, 0, 0, 0, 0, 0, 0]
+        a[3] = 7; // [4, 0, 0, 7, 0, 0, 0]
+
+        System.out.println(Arrays.toString(a));
+
+        // sayilar array'inin 4. index'indeki elementi yazdirin
+
+        System.out.println(sayilar[0]); // 7
+
+        // isimler array'inin 1. index'indeki ismi  yazdirin
+
+        System.out.println(isimler[1]); // Asli
+    }
+}
