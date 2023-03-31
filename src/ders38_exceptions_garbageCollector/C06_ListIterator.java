@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.ListIterator;
 
 public class C06_ListIterator {
+
     public static void main(String[] args) {
 
         List<Integer> sayilar = new ArrayList<>();
@@ -27,9 +28,5 @@ public class C06_ListIterator {
         }
 
         System.out.println(sayilar);
-
-
-
-
     }
 }
